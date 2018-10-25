@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         r = g = b = 0;
         View checkBoxView = View.inflate(this, R.layout.checkbox, null);
         CheckBox cbR = checkBoxView.findViewById(R.id.cbR);
-        cbR.setText("R");
         cbR.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -56,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         CheckBox cbG = checkBoxView.findViewById(R.id.cbG);
-        cbG.setText("G");
         cbG.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -67,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         CheckBox cbB = checkBoxView.findViewById(R.id.cbB);
-        cbB.setText("B");
         cbB.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
