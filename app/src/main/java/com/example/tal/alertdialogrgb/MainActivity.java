@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 color[which] = 255;
                 LL.setBackgroundColor(Color.rgb(color[0], color[1], color[2]));
+                for (int i = 0; i < 3; i++)
+                    color[i] = 0;
                 dialog.dismiss();
             }
         });
@@ -86,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 LL.setBackgroundColor(Color.rgb(color[0], color[1], color[2]));
+                for (int i = 0; i < 3; i++)
+                    color[i] = 0;
                 dialog.dismiss();
             }
         });
@@ -93,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         ad.show();
     }
 
-    public void OC_btn3 (View view) {
+    public void OC_btn3(View view) {
         LL.setBackgroundColor(Color.WHITE);
     }
 }
